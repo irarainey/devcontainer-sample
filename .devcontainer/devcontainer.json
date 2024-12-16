@@ -1,11 +1,12 @@
 {
     "name": "Sample Node Dev Container",
-    "image": "mcr.microsoft.com/devcontainers/typescript-node:0-20",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:20-bullseye",
     "customizations": {
         "vscode": {
             "extensions": [
                 "esbenp.prettier-vscode"
             ]
         }
-    }
+    },
+    "postCreateCommand": "npm i -g typescript"
 }
